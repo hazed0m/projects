@@ -1,0 +1,42 @@
+s:1330:"<!--full-->
+<div class="fullinfo">	
+	<!--table-->
+	<div>
+		<div class="del">
+			<a href="#" [+shop.info.delatributs+]>
+				<span class="cross">x</span>
+			</a>
+		</div>
+		<div class="icon">
+			<img src="[+shop.info.iconpath+]" width="90">
+		</div>
+		<div class="name">
+			<div>
+				<a href="[+shop.info.link+]">[+shop.info.name+]</a>
+				<i>[+shop.info.details+]</i>
+			</div>
+		</div>
+		<div class="price">
+			<div>
+				<i>[+shop.info.price+] <span>грн.</span></i>
+			</div>
+		</div>
+	</div>	
+	<!--/table-->
+</div>
+<!-- <div><a class="left" href="[+shop.info.selfurl+]&a=clear">Очистить</a> <a class="button right" href="[+shop.info.carturl+]">В корзину</a></div> -->
+<div>
+	<a class="button left" id="close-window" href="javascript:void(0);" onclick="$('#header .rbcont').fadeOut();$('.mask-wrap').fadeOut();">Продолжить покупки</a>
+	<!-- <form class="left" method="get" id="basketClearLink">
+		<input name="a" value="clear" type="hidden"/>
+		<a href="javascript:void(0);" onClick="getId('basketClearLink').submit();">Очистить</a>
+	</form>  -->
+	<a class="button right" href="[+shop.info.carturl+]">В корзину</a></div>
+<div class="clear"></div>
+<!--/full-->
+
+<!--empty-->
+<p class="info-empty" >[+shop.info.sempty+]</p>
+<!--/empty-->
+
+";

@@ -1,0 +1,72 @@
+s:2304:"<!-- <div class="title-block">	
+	<div></div>
+	<div>Фото</div>
+	<div>Наименование товара</div>
+	<div>Кол-во</div>
+	<div>Цена</div>
+	<div>Итого</div>
+</div> -->
+
+<!--noempty-->
+<div class="item-block">
+	<div class="del"><a href="#" title="Удалить" [+shop.basket.delatributs+]><span class="cross">x</span></a></div>
+	<div class="icon"><img src="[+shop.basket.iconpath+]" alt="[+shop.basket.name+]" width="90" /></div>
+	<div class="name">
+		<a href="[+shop.basket.link+]">[+shop.basket.name+]</a><i>[+shop.basket.details+]</i>
+		<!-- <div class="price">[+shop.basket.price+] [+shop.basket.monetary+]</div> -->
+	</div>
+	<div class="qty"><button class="qbuttonminus">-</button>[+shop.basket.qinput+]<button class="qbuttonplus">+</button></div>	
+	<div class="price">[+shop.basket.summa+] [+shop.basket.monetary+]</div>
+</div>
+<!--/noempty-->
+<div class="item-price">
+<!--subtotal-->
+
+	<!-- <div><span>Сумма:</span>[+shop.basket.subtotal+] [+shop.basket.monetary+]</div> -->
+
+<!--/subtotal-->
+<!--total-->
+	<div class="total">
+		<div class="inner"><span>Итого к оплате:</span>[+shop.basket.topay+] [+shop.basket.monetary+]</div>
+	</div>
+<!--/total-->
+</div>
+
+
+<!--discount-->
+<tr class="subtotal">
+<td colspan="3"></td>
+<td colspan="1">Скидка <b>[+shop.basket.discount+]</b> [+shop.basket.discountsymb+]</td>
+<td colspan="1">- [+shop.basket.discountsize+] [+shop.basket.monetary+]</td>
+<td></td>
+</tr>
+<!--/discount-->
+<!--shipping-->
+<tr class="subtotal">
+<td colspan="4"><b>Доставка:</b></td>
+<td colspan="1">[+shop.basket.shipping+] [+shop.basket.monetary+]</td>
+<td></td>
+</tr>
+<!--/shipping-->
+<!--tax-->
+<tr class="subtotal">
+<td colspan="4"><b>Налог:</b></td>
+<td colspan="1">[+shop.basket.tax+] [+shop.basket.monetary+]</td>
+<td></td>
+</tr>
+<!--/tax-->
+
+
+<!--buttons-->
+<p class="basket-flex">
+	<form class="left" method="GET" id="basketClearLink">
+		<input name="a" value="clear" type="hidden"/>
+		<a class="button right" href="[+shop.basket.checkurl+]">Оформить заказ</a>
+		<a href="javascript:void(0);" onClick="getId('basketClearLink').submit();" class="button right">Очистить корзину</a>
+	</form>
+</p>
+<!--/buttons-->
+
+
+
+";

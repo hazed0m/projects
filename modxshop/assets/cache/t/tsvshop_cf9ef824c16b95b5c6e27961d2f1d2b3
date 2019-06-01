@@ -1,0 +1,10 @@
+s:133:"<div class="cart-wrap">
+	<div>
+	  [+shop.basket.checkouttable+]
+	</div>
+	 <div>
+	  [+shop.basket.userform+]
+	</div>
+</div>
+
+";
